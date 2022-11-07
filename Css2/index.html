@@ -6,12 +6,24 @@
         <title>Odin clone using css</title>
     </head>
     <body>
-        <h1>The Odin project</h1>
-        <div class="intro">
+        <div id="sidebar">
+            <nav>
+               <h3>Navigation</h3>
+                <a href="#intro">Introduction</a>
+                <a href="#lesson-overview">Lesson Overview</a>
+                <a href="#basic-syntax">Basic Syntax</a>
+                <a href="#selectors">Selectors</a>
+                <a href="#uni-selector">Universal Selector</a>
+            </nav>
+        </div>
+        <div class="header">
+            <h1>The Odin project</h1>
+        </div>
+        <div id="intro">
             <h2>Introduction</h1>
             <p>In the previous lesson, you learned how to write the HTML that determines how a web page is structured. The next step is to make that structure look good with some style, which is exactly what CSS is for. In this lesson, we’re going to focus on what we believe are some foundational CSS concepts, things that everyone should know from the beginning — whether they are just starting out or simply need a refresher.</p>
         </div>
-        <div class="lesson-overview">
+        <div id="lesson-overview">
             <h2>Lesson Overview</h2>
             <p>This section contains a general overview of topics that you will learn in this lesson.</p>
             <ul>
@@ -21,7 +33,7 @@
                 <li>Understand what the cascade does.</li>
             </ul>
         </div>
-        <div class="basic-syntax">
+        <div id="basic-syntax">
             <h2>Basic Syntax</h2>
             <p>At the most basic level, CSS is made up of various rules. These rules are made up of a selector (more on this in a bit) and a semi-colon separated list of declarations, with each of those declarations being made up of a property:value pair.</p>
             <img class="img1" src="00.jpg">
@@ -30,7 +42,7 @@
             <h4>Note</h4>
             <p> &lt;div&gt; is one of the basic HTML elements. It is simply an empty container. In general, it is best to use other tags such as &lt;h1&gt; or &lt;p&lt; for content in your projects, but as we learn more about CSS you'll find that there are many cases where the thing you need is just a container for other elements. Many of our exercises use plain &lt;div&gt;s for simplicity. Later lessons will go into much more depth about when it is appropriate to use the various HTML elements.</p>
         </div>
-        <div class="selectors">
+        <div id="selectors">
             <h2>
                 Selectors
             </h2>
@@ -38,7 +50,7 @@
                 Selectors simply refer to the HTML elements to which CSS rules apply; they're what is actually being “selected” for each rule. The following subsections don't cover every selector available, but they're by far the most common and the ones you should get comfortable using first.
             </p>
         </div>
-        <div class="uni-selector">
+        <div id="uni-selector">
             <h3>
                 Universal selector
             </h3>
@@ -59,5 +71,6 @@
                 </li>
             </ol>
         </div>
+
     </body>    
 </html>

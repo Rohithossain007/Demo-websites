@@ -1,18 +1,41 @@
 body{
     background-color: black;
+    color: white;
+    text-align:left;
     font-size: 20px;
-    margin-top: 100px;
+    margin-top: 0px;
     margin-left: 100px;
     margin-right: 600px;
 }
-p,h1,h2,h3,h4,ul,ol{
-    color: white;
+html{
+    scroll-behavior: smooth;
 }
+#sidebar{
+    margin-top: 100px;
+    margin-left: 1000px;
+    border-style: solid;
+    color: white;
+    height: 70px;
+    background-color: rgb(252, 252, 252) !important;
+}
+
+/*p,h1,h2,h3,h4,ol{
+    color: white;
+}*/
 .note{
     background-color: rgb(73, 73, 73);
     width: 500px;
     border-style: solid;
     border-left-color: yellow
+}
+.note:hover{
+    font-style:oblique;
+    font-optical-sizing: auto;
+    background-color: black;
+    color: yellow
+}
+#lesson-overview>ul>li:nth-child(1){
+    color: blueviolet;
 }
 .change-color1{
     color: purple;
